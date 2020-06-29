@@ -9,7 +9,7 @@ def generate_html(template_html, slide_markdown, stylesheet_html, title=None):
     slide_markdown contents, and stylesheet_html. """
 
     # only support inline css for now, maybe links in the future
-    stylesheet_html = '<style>\n{0}</style'.format(stylesheet_html)
+    stylesheet_html = '<style>\n{0}</style>'.format(stylesheet_html)
     presentation = {
             'stylesheet_html': stylesheet_html,
             'slide_source': slide_markdown,
